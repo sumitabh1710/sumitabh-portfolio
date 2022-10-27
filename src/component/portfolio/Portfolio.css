@@ -1,0 +1,68 @@
+.portfolio__container {
+    background: var(--color-bg-variant);
+    border: 1px solid var(--color-primary);
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+}
+
+.project__details {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project__details > h2 {
+    color: var(--color-primary);
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.project__details > small {
+    padding-bottom: 0.5rem;
+}
+
+.github__link {
+    margin-top: 1rem;
+    margin-left: 80%;
+}
+
+.project__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.project__cards > img {
+    width: 30%;
+    border-radius: 2rem;
+}
+
+.github__link:hover {
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1024px){
+    .github__link{
+        margin-left: 50%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .project__cards {
+        display: grid;
+    }
+
+    .project__cards > img {
+        width: 80%;
+        padding: 2rem;
+        border-radius: 20%;
+    }
+
+    .project__details > h2 {
+        padding-top: 0;
+    }
+}
